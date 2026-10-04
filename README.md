@@ -1,45 +1,53 @@
-<h1 align="center">Hi there, I'm Vasilen 👋</h1>
-<h3 align="center">Data Analyst & Junior Data Engineer</h3>
+# Hi there, I'm Vasilen 👋
 
-<p align="center">
-  Transitioning 5 years of foundational data operations into scalable data engineering and advanced analytics. Passionate about automating pipelines, building relational databases, and extracting actionable business insights.
-</p>
+### Data Engineer & Analyst | Python, PostgreSQL, AWS
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/vasilen-kanchev-030878290/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-</p>
+I am a Data Engineer with 5+ years of experience designing automated ETL pipelines, managing PostgreSQL databases, and developing robust BI reporting workflows. Driven by structural efficiency and continuous improvement, I specialize in transforming messy, unstructured data into optimized relational schemas. Having competed internationally as a professional esports athlete, I thrive in high-pressure, highly analytical environments.
+
+[<kbd> <br> LINKEDIN <br> </kbd>](https://www.linkedin.com/in/vasilenkanchev)
 
 ---
 
-### 🛠️ Tech Stack & Tools
+## ⚙️ Engineering Philosophy
+- **Architecture First:** I build normalized, scalable database schemas before writing a single line of application code.
+- **Data Integrity:** I rely on automated validation, idempotency in data pipelines, and strict ELT/ETL testing (dbt).
+- **Automation over Manual Effort:** If a process requires manual data entry, I script it, containerize it (Docker), and schedule it (GitHub Actions).
+
+---
+
+## 🛠 Tech Stack & Core Tools
 
 **Languages & Databases:**  
-<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python"/>
-<img src="https://img.shields.io/badge/sql-003B57?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL"/>
-<img src="https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![SQL](https://img.shields.io/badge/sql-003B57?style=for-the-badge&logo=postgresql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Bash](https://img.shields.io/badge/bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
-**Data Engineering & ML:**  
-<img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
-<img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn"/>
-<img src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white" alt="TensorFlow"/>
+**Data Engineering Frameworks:**  
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 
-**BI & Operations:**  
-<img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white" alt="Tableau"/>
-<img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
-<img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS"/>
-
----
-
-### 📂 Featured Projects
-
-* 🔄 **[Automated ETL Pipeline](https://github.com/VasilenData)** – Scheduled Python-based data ingestion pipeline extracting from public APIs, cleaning via Pandas, and staging in PostgreSQL.
-* 📈 **[E-Commerce Sales Dashboard](https://github.com/VasilenData)** – Interactive Tableau reporting suite tracking customer churn and revenue across 50k+ records.
-* 🤖 **[Customer Churn Classifier](https://github.com/VasilenData)** – Supervised ML model built with Scikit-Learn to forecast customer retention trends.
+**BI & Analytics:**  
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
+## 📁 Production-Grade Projects
+
+*   🔄 **[Tech Job Market ETL Pipeline](link-to-repo)** 
+    *   **Architecture:** Automated Python data ingestion pipeline extracting from public REST APIs, cleaning JSON payloads via Pandas, and staging in a normalized PostgreSQL database. 
+    *   **Infrastructure:** Fully orchestrated with GitHub Actions cron jobs for daily idempotency and error logging.
+*   📈 **[E-Commerce Sales & Logistics Dashboard](link-to-repo)** 
+    *   **Architecture:** Complex SQL architecture utilizing CTEs, JOINS, and window functions to query 100,000+ relational records.
+    *   **Impact:** Mapped geospatial revenue trends against delivery delays to identify regional logistics bottlenecks via Tableau.
+*   🤖 **[Customer Churn Predictive Model](link-to-repo)** 
+    *   **Architecture:** End-to-end supervised machine learning pipeline (Random Forest) to forecast customer retention.
+    *   **Impact:** Executed rigorous feature engineering and EDA to achieve 85% test accuracy.
 ### 📊 GitHub Activity
 
 <p align="center">
