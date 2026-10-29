@@ -43,14 +43,14 @@ I am a Data Engineer with 7 years in data roles across operations, analytics and
     *   **Architecture:** Hacker News API → dbt models with 15 automated tests → DuckDB → dashboard, orchestrated by an Airflow DAG and published on a schedule with GitHub Actions. [Live demo](https://vasilendata.github.io/hn-pulse/)
 
 *   🔄 **[Tech Job Market ETL Pipeline](https://github.com/VasilenData/tech-job-market-etl)** 
-    *   **Architecture:** Automated Python data ingestion pipeline extracting from public REST APIs, cleaning JSON payloads via Pandas, and staging in a normalized PostgreSQL database. 
+    *   **Architecture:** Automated Python data ingestion pipeline extracting from public REST APIs, validating and normalizing JSON payloads, and loading them idempotently into a normalized PostgreSQL database. 
     *   **Infrastructure:** Fully orchestrated with GitHub Actions cron jobs for daily idempotency and error logging.
 *   📈 **[E-Commerce Sales & Logistics Dashboard](https://github.com/VasilenData/ecommerce-logistics-dashboard)** 
     *   **Architecture:** Complex SQL architecture utilizing CTEs, JOINS, and window functions to query 100,000+ relational records.
-    *   **Impact:** Mapped geospatial revenue trends against delivery delays to identify regional logistics bottlenecks via Tableau.
+    *   **Impact:** Mapped geospatial revenue trends against delivery delays to identify regional logistics bottlenecks, published as a [live dashboard](https://vasilendata.github.io/ecommerce-logistics-dashboard/).
 *   🤖 **[Customer Churn Predictive Model](https://github.com/VasilenData/customer-churn-model)** 
     *   **Architecture:** End-to-end supervised machine learning pipeline (Random Forest) to forecast customer retention.
-    *   **Impact:** Executed rigorous feature engineering and EDA to achieve 85% test accuracy.
+    *   **Impact:** Executed rigorous feature engineering and EDA to reach ROC-AUC 0.84 and 78% recall on churners (76% accuracy, held-out test set).
 
 ---
 
