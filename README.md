@@ -2,9 +2,9 @@
 
 ### Data Engineer | Python, dbt, PostgreSQL, AWS | Porto, Portugal
 
-I am a Data Engineer with 5+ years of experience designing automated ETL pipelines, managing PostgreSQL databases, and developing robust BI reporting workflows. Driven by structural efficiency and continuous improvement, I specialize in transforming messy, unstructured data into optimized relational schemas. Having competed internationally as a professional esports athlete, I thrive in high-pressure, highly analytical environments.
+I am a Data Engineer with 7 years in data roles across operations, analytics and engineering, building automated ETL pipelines, managing PostgreSQL databases, and developing BI reporting workflows. Driven by structural efficiency and continuous improvement, I specialize in transforming messy, unstructured data into optimized relational schemas. Having competed internationally as a professional esports athlete, I thrive in high-pressure, highly analytical environments.
 
-[<kbd> <br> PORTFOLIO <br> </kbd>](https://vasilendata.github.io) [<kbd> <br> LINKEDIN <br> </kbd>](https://www.linkedin.com/in/vasilen-kanchev-030878290/) [<kbd> <br> EMAIL <br> </kbd>](mailto:vasilen.business@gmail.com)
+[<kbd> <br> PORTFOLIO <br> </kbd>](https://vasilendata.github.io) [<kbd> <br> LINKEDIN <br> </kbd>](https://www.linkedin.com/in/vasilenkanchev/) [<kbd> <br> EMAIL <br> </kbd>](mailto:vasilen.business@gmail.com)
 
 ---
 
@@ -37,15 +37,18 @@ I am a Data Engineer with 5+ years of experience designing automated ETL pipelin
 
 ---
 
-## 📁 Projects (repos and write-ups coming soon)
+## 📁 Projects
 
-*   🔄 **Tech Job Market ETL Pipeline** 
+*   🚀 **[HN Pulse (flagship, live dashboard)](https://github.com/VasilenData/hn-pulse)**
+    *   **Architecture:** Hacker News API → dbt models with 15 automated tests → DuckDB → dashboard, orchestrated by an Airflow DAG and published on a schedule with GitHub Actions. [Live demo](https://vasilendata.github.io/hn-pulse/)
+
+*   🔄 **[Tech Job Market ETL Pipeline](https://github.com/VasilenData/tech-job-market-etl)** 
     *   **Architecture:** Automated Python data ingestion pipeline extracting from public REST APIs, cleaning JSON payloads via Pandas, and staging in a normalized PostgreSQL database. 
     *   **Infrastructure:** Fully orchestrated with GitHub Actions cron jobs for daily idempotency and error logging.
-*   📈 **E-Commerce Sales & Logistics Dashboard** 
+*   📈 **[E-Commerce Sales & Logistics Dashboard](https://github.com/VasilenData/ecommerce-logistics-dashboard)** 
     *   **Architecture:** Complex SQL architecture utilizing CTEs, JOINS, and window functions to query 100,000+ relational records.
     *   **Impact:** Mapped geospatial revenue trends against delivery delays to identify regional logistics bottlenecks via Tableau.
-*   🤖 **Customer Churn Predictive Model** 
+*   🤖 **[Customer Churn Predictive Model](https://github.com/VasilenData/customer-churn-model)** 
     *   **Architecture:** End-to-end supervised machine learning pipeline (Random Forest) to forecast customer retention.
     *   **Impact:** Executed rigorous feature engineering and EDA to achieve 85% test accuracy.
 
