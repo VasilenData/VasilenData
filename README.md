@@ -1,10 +1,10 @@
 # Hi there, I'm Vasilen 👋
 
-### Data Engineer & Analyst | Python, PostgreSQL, AWS
+### Data Engineer | Python, dbt, PostgreSQL, AWS | Porto, Portugal
 
 I am a Data Engineer with 5+ years of experience designing automated ETL pipelines, managing PostgreSQL databases, and developing robust BI reporting workflows. Driven by structural efficiency and continuous improvement, I specialize in transforming messy, unstructured data into optimized relational schemas. Having competed internationally as a professional esports athlete, I thrive in high-pressure, highly analytical environments.
 
-[<kbd> <br> LINKEDIN <br> </kbd>](https://www.linkedin.com/in/vasilenkanchev)
+[<kbd> <br> PORTFOLIO <br> </kbd>](https://vasilendata.github.io) [<kbd> <br> LINKEDIN <br> </kbd>](https://www.linkedin.com/in/vasilen-kanchev-030878290/) [<kbd> <br> EMAIL <br> </kbd>](mailto:vasilen.business@gmail.com)
 
 ---
 
@@ -37,19 +37,18 @@ I am a Data Engineer with 5+ years of experience designing automated ETL pipelin
 
 ---
 
-## 📁 Production-Grade Projects
+## 📁 Projects (repos and write-ups coming soon)
 
-*   🔄 **[Tech Job Market ETL Pipeline](link-to-repo)** 
+*   🔄 **Tech Job Market ETL Pipeline** 
     *   **Architecture:** Automated Python data ingestion pipeline extracting from public REST APIs, cleaning JSON payloads via Pandas, and staging in a normalized PostgreSQL database. 
     *   **Infrastructure:** Fully orchestrated with GitHub Actions cron jobs for daily idempotency and error logging.
-*   📈 **[E-Commerce Sales & Logistics Dashboard](link-to-repo)** 
+*   📈 **E-Commerce Sales & Logistics Dashboard** 
     *   **Architecture:** Complex SQL architecture utilizing CTEs, JOINS, and window functions to query 100,000+ relational records.
     *   **Impact:** Mapped geospatial revenue trends against delivery delays to identify regional logistics bottlenecks via Tableau.
-*   🤖 **[Customer Churn Predictive Model](link-to-repo)** 
+*   🤖 **Customer Churn Predictive Model** 
     *   **Architecture:** End-to-end supervised machine learning pipeline (Random Forest) to forecast customer retention.
     *   **Impact:** Executed rigorous feature engineering and EDA to achieve 85% test accuracy.
-### 📊 GitHub Activity
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=VasilenData&show_icons=true&theme=dark" alt="Vasilen's GitHub Stats" />
-</p>
+---
+
+📍 Porto, Portugal · Open to full-time data engineering roles · [vasilendata.github.io](https://vasilendata.github.io)
