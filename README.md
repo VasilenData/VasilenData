@@ -1,57 +1,30 @@
-# Hi there, I'm Vasilen 👋
+# Vasilen Kanchev
 
-### Data Engineer | Python, dbt, PostgreSQL, AWS | Porto, Portugal
+**Data Engineer** in Porto, Portugal. Python, dbt, PostgreSQL, AWS.
 
-I am a Data Engineer with 7 years in data roles across operations, analytics and engineering, building automated ETL pipelines, managing PostgreSQL databases, and developing BI reporting workflows. Driven by structural efficiency and continuous improvement, I specialize in transforming messy, unstructured data into optimized relational schemas. Having competed internationally as a professional esports athlete, I thrive in high-pressure, highly analytical environments.
+I have 7 years in data roles across operations, analytics and engineering. I build automated ETL pipelines, manage PostgreSQL databases and develop BI reporting workflows, turning messy, unstructured data into optimized relational schemas. I also competed internationally as a professional esports athlete, and I work well in high-pressure, analytical environments.
 
-[<kbd> <br> PORTFOLIO <br> </kbd>](https://vasilendata.github.io) [<kbd> <br> LINKEDIN <br> </kbd>](https://www.linkedin.com/in/vasilenkanchev/) [<kbd> <br> EMAIL <br> </kbd>](mailto:vasilen.business@gmail.com)
+[Portfolio](https://vasilendata.github.io) · [LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) · [Email](mailto:vasilen.business@gmail.com)
 
----
+Open to full-time data engineering roles.
 
-## ⚙️ Engineering Philosophy
-- **Architecture First:** I build normalized, scalable database schemas before writing a single line of application code.
-- **Data Integrity:** I rely on automated validation, idempotency in data pipelines, and strict ELT/ETL testing (dbt).
-- **Automation over Manual Effort:** If a process requires manual data entry, I script it, containerize it (Docker), and schedule it (GitHub Actions).
+## How I work
 
----
+- **Architecture first.** I design normalized, scalable schemas before writing application code.
+- **Data integrity.** Automated validation, idempotent pipelines and strict ELT/ETL testing with dbt.
+- **Automation over manual effort.** If a process needs manual data entry, I script it, containerize it with Docker and schedule it with GitHub Actions.
 
-## 🛠 Tech Stack & Core Tools
+## Projects
 
-**Languages & Databases:**  
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![SQL](https://img.shields.io/badge/sql-003B57?style=for-the-badge&logo=postgresql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Bash](https://img.shields.io/badge/bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+| Project | What it does | Stack |
+|---|---|---|
+| [**HN Pulse**](https://github.com/VasilenData/hn-pulse) ([live](https://vasilendata.github.io/hn-pulse/)) | Hacker News API, then dbt models with 15 automated tests, then DuckDB and a dashboard. Orchestrated by an Airflow DAG and published on a schedule with GitHub Actions. | Python, dbt, DuckDB, Airflow, GitHub Actions |
+| [**Tech Job Market ETL**](https://github.com/VasilenData/tech-job-market-etl) | Python ingestion from public REST APIs. It validates and normalizes JSON payloads and loads them idempotently into PostgreSQL, scheduled daily with GitHub Actions cron and error logging. | Python, PostgreSQL, GitHub Actions |
+| [**E-Commerce Sales & Logistics Dashboard**](https://github.com/VasilenData/ecommerce-logistics-dashboard) ([live](https://vasilendata.github.io/ecommerce-logistics-dashboard/)) | SQL with CTEs, joins and window functions over 100,000+ orders. It maps revenue against delivery delays to find regional logistics bottlenecks. | SQL, PostgreSQL, Chart.js |
+| [**Customer Churn Model**](https://github.com/VasilenData/customer-churn-model) | Supervised Random Forest pipeline with feature engineering and EDA. ROC-AUC 0.84 and 78% recall on churners (76% accuracy, held-out test set). | Python, Pandas, Scikit-Learn |
 
-**Data Engineering Frameworks:**  
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+## Toolkit
 
-**BI & Analytics:**  
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-
----
-
-## 📁 Projects
-
-*   🚀 **[HN Pulse (flagship, live dashboard)](https://github.com/VasilenData/hn-pulse)**
-    *   **Architecture:** Hacker News API → dbt models with 15 automated tests → DuckDB → dashboard, orchestrated by an Airflow DAG and published on a schedule with GitHub Actions. [Live demo](https://vasilendata.github.io/hn-pulse/)
-
-*   🔄 **[Tech Job Market ETL Pipeline](https://github.com/VasilenData/tech-job-market-etl)** 
-    *   **Architecture:** Automated Python data ingestion pipeline extracting from public REST APIs, validating and normalizing JSON payloads, and loading them idempotently into a normalized PostgreSQL database. 
-    *   **Infrastructure:** Fully orchestrated with GitHub Actions cron jobs for daily idempotency and error logging.
-*   📈 **[E-Commerce Sales & Logistics Dashboard](https://github.com/VasilenData/ecommerce-logistics-dashboard)** 
-    *   **Architecture:** Complex SQL architecture utilizing CTEs, JOINS, and window functions to query 100,000+ relational records.
-    *   **Impact:** Mapped geospatial revenue trends against delivery delays to identify regional logistics bottlenecks, published as a [live dashboard](https://vasilendata.github.io/ecommerce-logistics-dashboard/).
-*   🤖 **[Customer Churn Predictive Model](https://github.com/VasilenData/customer-churn-model)** 
-    *   **Architecture:** End-to-end supervised machine learning pipeline (Random Forest) to forecast customer retention.
-    *   **Impact:** Executed rigorous feature engineering and EDA to reach ROC-AUC 0.84 and 78% recall on churners (76% accuracy, held-out test set).
-
----
-
-📍 Porto, Portugal · Open to full-time data engineering roles · [vasilendata.github.io](https://vasilendata.github.io)
+**Languages and databases:** Python, SQL, PostgreSQL, Bash
+**Data engineering:** dbt, Airflow, Docker, GitHub Actions, AWS, Pandas
+**BI and analytics:** Tableau, Scikit-Learn, Git
