@@ -4,7 +4,7 @@
 
 I have 7 years in data roles across operations, analytics and engineering. I build automated ETL pipelines, manage PostgreSQL databases and develop BI reporting workflows, turning messy, unstructured data into optimized relational schemas. I also competed internationally as a professional esports athlete, and I work well in high-pressure, analytical environments.
 
-[Portfolio](https://vasilendata.github.io) · [LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) · [Email](mailto:vasilen.business@gmail.com)
+[Portfolio](https://vasilendata.github.io) · [CV (PDF)](https://vasilendata.github.io/vasilen-kanchev-cv.pdf) · [LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) · [Email](mailto:vasilen.business@gmail.com)
 
 Open to full-time data engineering roles.
 
@@ -18,8 +18,8 @@ Open to full-time data engineering roles.
 
 | Project | What it does | Stack |
 |---|---|---|
-| [**HN Pulse**](https://github.com/VasilenData/hn-pulse) ([live](https://vasilendata.github.io/hn-pulse/)) | Hacker News API, then dbt models under enforced data contracts with 27 automated tests, then DuckDB and a dashboard. Orchestrated by an Airflow DAG and published on a schedule with GitHub Actions. | Python, dbt, DuckDB, Airflow, GitHub Actions |
 | [**Wikipedia Streaming Lakehouse**](https://github.com/VasilenData/wiki-stream-lakehouse) | Live Wikipedia edits through Kafka and Spark Structured Streaming into Parquet, queried with DuckDB. Late and malformed events are handled and tested on real Kafka in CI. Terraform for AWS is validated, not deployed. | Kafka, Spark, DuckDB, Terraform |
+| [**HN Pulse**](https://github.com/VasilenData/hn-pulse) ([live](https://vasilendata.github.io/hn-pulse/)) | Hacker News API, then dbt models under enforced data contracts with 27 automated tests, then DuckDB and a dashboard. Orchestrated by an Airflow DAG and published on a schedule with GitHub Actions. | Python, dbt, DuckDB, Airflow, GitHub Actions |
 | [**Four-Engine Benchmark**](https://github.com/VasilenData/taxi-engines-benchmark) | The same four queries on DuckDB, Polars, pandas and Spark over 79 million NYC taxi trips, answers cross-checked. DuckDB 1.4 s against 32.8 s for pandas. | DuckDB, Polars, pandas, Spark |
 | [**Retrieval Evaluation for RAG**](https://github.com/VasilenData/rag-retrieval-eval) | BM25, Qdrant vectors, rank fusion and reranking measured on 2,000 labelled questions; recall@1 from 76% to 86% with reranking. Retrieval only. | Qdrant, BM25, fastembed |
 | [**Tech Job Market ETL**](https://github.com/VasilenData/tech-job-market-etl) | Python ingestion from public REST APIs. It validates and normalizes JSON payloads and loads them idempotently into PostgreSQL, scheduled daily with GitHub Actions cron and error logging. | Python, PostgreSQL, GitHub Actions |
