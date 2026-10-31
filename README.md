@@ -18,7 +18,10 @@ Open to full-time data engineering roles.
 
 | Project | What it does | Stack |
 |---|---|---|
-| [**HN Pulse**](https://github.com/VasilenData/hn-pulse) ([live](https://vasilendata.github.io/hn-pulse/)) | Hacker News API, then dbt models with 15 automated tests, then DuckDB and a dashboard. Orchestrated by an Airflow DAG and published on a schedule with GitHub Actions. | Python, dbt, DuckDB, Airflow, GitHub Actions |
+| [**HN Pulse**](https://github.com/VasilenData/hn-pulse) ([live](https://vasilendata.github.io/hn-pulse/)) | Hacker News API, then dbt models under enforced data contracts with 27 automated tests, then DuckDB and a dashboard. Orchestrated by an Airflow DAG and published on a schedule with GitHub Actions. | Python, dbt, DuckDB, Airflow, GitHub Actions |
+| [**Wikipedia Streaming Lakehouse**](https://github.com/VasilenData/wiki-stream-lakehouse) | Live Wikipedia edits through Kafka and Spark Structured Streaming into Parquet, queried with DuckDB. Late and malformed events are handled and tested on real Kafka in CI. Terraform for AWS is validated, not deployed. | Kafka, Spark, DuckDB, Terraform |
+| [**Four-Engine Benchmark**](https://github.com/VasilenData/taxi-engines-benchmark) | The same four queries on DuckDB, Polars, pandas and Spark over 79 million NYC taxi trips, answers cross-checked. DuckDB 1.4 s against 32.8 s for pandas. | DuckDB, Polars, pandas, Spark |
+| [**Retrieval Evaluation for RAG**](https://github.com/VasilenData/rag-retrieval-eval) | BM25, Qdrant vectors, rank fusion and reranking measured on 2,000 labelled questions; recall@1 from 76% to 86% with reranking. Retrieval only. | Qdrant, BM25, fastembed |
 | [**Tech Job Market ETL**](https://github.com/VasilenData/tech-job-market-etl) | Python ingestion from public REST APIs. It validates and normalizes JSON payloads and loads them idempotently into PostgreSQL, scheduled daily with GitHub Actions cron and error logging. | Python, PostgreSQL, GitHub Actions |
 | [**E-Commerce Sales & Logistics Dashboard**](https://github.com/VasilenData/ecommerce-logistics-dashboard) ([live](https://vasilendata.github.io/ecommerce-logistics-dashboard/)) | SQL with CTEs, joins and window functions over 100,000+ orders. It maps revenue against delivery delays to find regional logistics bottlenecks. | SQL, PostgreSQL, Chart.js |
 | [**Customer Churn Model**](https://github.com/VasilenData/customer-churn-model) | Supervised Random Forest pipeline with feature engineering and EDA. ROC-AUC 0.84 and 78% recall on churners (76% accuracy, held-out test set). | Python, Pandas, Scikit-Learn |
@@ -26,5 +29,5 @@ Open to full-time data engineering roles.
 ## Toolkit
 
 **Languages and databases:** Python, SQL, PostgreSQL, Bash
-**Data engineering:** dbt, Airflow, Docker, GitHub Actions, AWS, Pandas
+**Data engineering:** dbt, Airflow, Kafka, Spark, DuckDB, Polars, Terraform, Docker, GitHub Actions, AWS, Pandas
 **BI and analytics:** Tableau, Scikit-Learn, Git
