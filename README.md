@@ -1,12 +1,12 @@
 # Vasilen Kanchev
 
-**Data Engineer** in Porto, Portugal. Python, dbt, PostgreSQL, AWS.
+**Data Engineer and Chief Revenue Officer** in Porto, Portugal. Python, dbt, PostgreSQL, AWS.
 
-I have 7 years in data roles across operations, analytics and engineering. I build automated ETL pipelines, manage PostgreSQL databases and develop BI reporting workflows, turning messy, unstructured data into optimized relational schemas. I also competed internationally as a professional esports athlete, and I work well in high-pressure, analytical environments.
+I have 7 years in data roles across operations, analytics and engineering, and I lead people as well as pipelines: 80 employees at Gosian Media (where revenue grew 7.5x) and 150 at Influencer Marketing Hub. I build automated ETL pipelines, manage PostgreSQL databases and develop BI reporting workflows, turning messy, unstructured data into optimized relational schemas. I also competed internationally as a professional esports athlete, and I work well in high-pressure, analytical environments.
 
 [Portfolio](https://vasilendata.github.io) · [CV (PDF)](https://vasilendata.github.io/vasilen-kanchev-cv.pdf) · [LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) · [Email](mailto:vasilen.business@gmail.com)
 
-Open to full-time data engineering roles.
+Open to full-time data engineering and data leadership roles.
 
 ## How I work
 
