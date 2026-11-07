@@ -32,6 +32,6 @@ Open to full-time data engineering and data leadership roles.
 
 ## Toolkit
 
-**Languages and databases:** Python, SQL, PostgreSQL, Bash
-**Data engineering:** dbt, Airflow, Kafka, Spark, DuckDB, Polars, Terraform, Docker, GitHub Actions, AWS, Pandas
-**BI and analytics:** Tableau, Scikit-Learn, Git
+- **Languages and databases:** Python, SQL, PostgreSQL, Bash
+- **Data engineering:** dbt, Airflow, Kafka, Spark, DuckDB, Polars, Terraform, Docker, GitHub Actions, AWS, Pandas
+- **BI and analytics:** Tableau, Scikit-Learn, Git
