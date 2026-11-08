@@ -2,9 +2,9 @@
 
 **Data Engineer | Python, SQL, dbt, PostgreSQL and AWS RDS**
 
-Porto, Portugal · EU citizen · Open to full-time remote Data Engineer roles.
+Porto, Portugal · EU citizen · Open to full-time remote Data Engineer and SQL/dbt Analytics Engineer roles.
 
-I build tested data pipelines that turn fragmented operational data into reliable datasets. At Gosian Media, I migrated **30+ spreadsheets into PostgreSQL on AWS RDS** and built Python, Docker and dbt workflows that replaced **10+ hours of manual data entry each week**. Previously, I automated Python/Tableau KPI reporting for **15+ stakeholders** and built ETL workflows from social media APIs.
+I built and maintain Gosian Media's **agency-wide cash-flow reporting system**, live since **October 2026** with **daily refreshes**. I migrated **30+ spreadsheets into PostgreSQL on AWS RDS** and built Python, Docker and dbt workflows, saving an estimated **10+ hours of manual data entry each week**. Previously, I automated Python/Tableau KPI reporting for **15+ stakeholders** and built ETL workflows from social media APIs.
 
 [Portfolio](https://vasilendata.github.io) · [CV (PDF)](https://vasilendata.github.io/vasilen-kanchev-cv.pdf) · [LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) · [Email](mailto:vasilen.business@gmail.com)
 
@@ -20,7 +20,7 @@ I build tested data pipelines that turn fragmented operational data into reliabl
 
 - **Professional delivery:** [the spreadsheet-to-RDS case study](https://vasilendata.github.io/gosian/) explains the operational problem, my implementation and the difference between automation results and wider business outcomes.
 - **Repeatability and recovery:** [NYC Taxi pipeline tests](https://github.com/VasilenData/nyc-taxi-data-platform/blob/main/tests/test_pipeline.py) exercise reruns and failure paths. The [dated full-data measurement](https://github.com/VasilenData/nyc-taxi-data-platform/blob/main/measurements/full-2026-11-08.json) records the benchmark conditions; sample CI runs are a separate check.
-- **Scheduled delivery:** [HN Pulse workflow runs](https://github.com/VasilenData/hn-pulse/actions) show the pipeline's actual run history. The [live dashboard](https://vasilendata.github.io/hn-pulse/) exposes data age and quality status.
+- **Scheduled delivery:** the [dated HN Pulse operations review](https://github.com/VasilenData/hn-pulse/blob/main/docs/operations-review-2026-11-08.md) records actual run outcomes, two historical failures and a separately labeled recovery exercise. The [live dashboard](https://vasilendata.github.io/hn-pulse/) exposes data age and quality status.
 
 For **Analytics Engineer** roles, start with the [finance mart and reconciliation checks](https://github.com/VasilenData/ecommerce-finance-mart) and my [Analytics Engineer CV](https://vasilendata.github.io/vasilen-kanchev-cv-analytics.pdf).
 
@@ -60,4 +60,4 @@ My current official role is **Data Engineer and Chief Revenue Officer at Gosian 
 
 I am studying BSc (Hons) Computer Science at the University of Suffolk, expected 2027, and hold a Higher Certificate in Mathematics and Statistics with Distinction.
 
-For remote Data Engineer opportunities involving Python, SQL, dbt, data quality or pipeline ownership, [contact me on LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) or [email me](mailto:vasilen.business@gmail.com).
+For remote Data Engineer or SQL/dbt Analytics Engineer opportunities involving data quality, financial reporting or pipeline ownership, [contact me on LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) or [email me](mailto:vasilen.business@gmail.com).
