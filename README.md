@@ -16,11 +16,13 @@ I build tested data pipelines that turn fragmented operational data into reliabl
 | [**Wikipedia Streaming Lakehouse**](https://github.com/VasilenData/wiki-stream-lakehouse) | Kafka and Spark Structured Streaming with watermark-bounded deduplication, late-event handling, dead letters and checkpoint-reuse tests on real Kafka. | Local execution and CI. AWS Terraform is validated, not deployed. |
 | [**HN Pulse**](https://github.com/VasilenData/hn-pulse) · [live dashboard](https://vasilendata.github.io/hn-pulse/) | Python/dbt/DuckDB pipeline with **27 dbt data tests** and enforced model contracts; failed tests block dashboard publication. | GitHub Actions runs the live schedule. A separate Airflow DAG demonstrates local orchestration. |
 
-## How I work
+## Start with the evidence
 
-- **Connect the data to a decision.** Define the metrics, table grain and downstream use before choosing the implementation.
-- **Make failures visible.** Validate schemas and counts, retain rejected records where appropriate, and test reruns and failure paths.
-- **Explain the evidence.** Keep professional delivery, local experiments, CI checks and deployed demos clearly identified.
+- **Professional delivery:** [the spreadsheet-to-RDS case study](https://vasilendata.github.io/gosian/) explains the operational problem, my implementation and the difference between automation results and wider business outcomes.
+- **Repeatability and recovery:** [NYC Taxi pipeline tests](https://github.com/VasilenData/nyc-taxi-data-platform/blob/main/tests/test_pipeline.py) exercise reruns and failure paths. The [dated full-data measurement](https://github.com/VasilenData/nyc-taxi-data-platform/blob/main/measurements/full-2026-11-08.json) records the benchmark conditions; sample CI runs are a separate check.
+- **Scheduled delivery:** [HN Pulse workflow runs](https://github.com/VasilenData/hn-pulse/actions) show the pipeline's actual run history. The [live dashboard](https://vasilendata.github.io/hn-pulse/) exposes data age and quality status.
+
+For **Analytics Engineer** roles, start with the [finance mart and reconciliation checks](https://github.com/VasilenData/ecommerce-finance-mart) and my [Analytics Engineer CV](https://vasilendata.github.io/vasilen-kanchev-cv-analytics.pdf).
 
 ## Toolkit
 
