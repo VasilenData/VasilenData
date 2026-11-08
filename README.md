@@ -1,40 +1,61 @@
 # Vasilen Kanchev
 
-**Data Engineer and Chief Revenue Officer** in Porto, Portugal. Python, dbt, PostgreSQL, AWS.
+**Data Engineer | Python, SQL, dbt, PostgreSQL and AWS RDS**
 
-I have 7 years in data roles across operations, analytics and engineering, and I lead people as well as pipelines: 80 employees at Gosian Media (where revenue grew 7.5x) and 150 at Influencer Marketing Hub. I build automated ETL pipelines, manage PostgreSQL databases and develop BI reporting workflows, turning messy, unstructured data into optimized relational schemas. I also competed internationally as a professional esports athlete, and I work well in high-pressure, analytical environments.
+Porto, Portugal · EU citizen · Open to full-time remote Data Engineer roles.
+
+I build tested data pipelines that turn fragmented operational data into reliable datasets. At Gosian Media, I migrated **30+ spreadsheets into PostgreSQL on AWS RDS** and built Python, Docker and dbt workflows that replaced **10+ hours of manual data entry each week**. Previously, I automated Python/Tableau KPI reporting for **15+ stakeholders** and built ETL workflows from social media APIs.
 
 [Portfolio](https://vasilendata.github.io) · [CV (PDF)](https://vasilendata.github.io/vasilen-kanchev-cv.pdf) · [LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) · [Email](mailto:vasilen.business@gmail.com)
 
-Open to full-time data engineering and data leadership roles.
+## Selected engineering projects
+
+| Project | What to inspect | Operating scope |
+|---|---|---|
+| [**NYC Taxi Data Platform**](https://github.com/VasilenData/nyc-taxi-data-platform) | Dagster/dbt pipeline over **31.6M public taxi trips**, with quarantine reasons, reconciliation checks and tests for reruns and corrupted input. | Local/Docker implementation and CI. Full-data measurements and sample-test scope are documented in the repository. |
+| [**Wikipedia Streaming Lakehouse**](https://github.com/VasilenData/wiki-stream-lakehouse) | Kafka and Spark Structured Streaming with watermark-bounded deduplication, late-event handling, dead letters and checkpoint-reuse tests on real Kafka. | Local execution and CI. AWS Terraform is validated, not deployed. |
+| [**HN Pulse**](https://github.com/VasilenData/hn-pulse) · [live dashboard](https://vasilendata.github.io/hn-pulse/) | Python/dbt/DuckDB pipeline with **27 dbt data tests** and enforced model contracts; failed tests block dashboard publication. | GitHub Actions runs the live schedule. A separate Airflow DAG demonstrates local orchestration. |
 
 ## How I work
 
-- **Architecture first.** I design normalized, scalable schemas before writing application code.
-- **Data integrity.** Automated validation, idempotent pipelines and strict ELT/ETL testing with dbt.
-- **Automation over manual effort.** If a process needs manual data entry, I script it, containerize it with Docker and schedule it with GitHub Actions.
-
-## Projects
-
-| Project | What it does | Stack |
-|---|---|---|
-| [**Wikipedia Streaming Lakehouse**](https://github.com/VasilenData/wiki-stream-lakehouse) | Live Wikipedia edits through Kafka and Spark Structured Streaming into Parquet, queried with DuckDB. Late and malformed events are handled and tested on real Kafka in CI. Terraform for AWS is validated, not deployed. | Kafka, Spark, DuckDB, Terraform |
-| [**NYC Taxi Data Platform**](https://github.com/VasilenData/nyc-taxi-data-platform) | 31.6 million trips through Dagster and dbt with an enforced contract, a quarantine table that keeps every rejected row and its reason, and blocking checks that stop a corrupted month. 10 months build in 62 s. | Dagster, dbt, DuckDB, Docker |
-| [**Taxi Trip Duration Service**](https://github.com/VasilenData/taxi-eta-service) | LightGBM with 62% lower error than a baseline on a held-out future month (3.52 vs 9.33 min), served by a validated FastAPI with MLflow, champion/challenger promotion and drift monitoring. | LightGBM, FastAPI, MLflow, Docker |
-| [**Evaluated AI Research Assistant**](https://github.com/VasilenData/research-assistant-eval) | A local 1.5B model answering from 2,835 recent arXiv abstracts. Retrieval lifts answers with the reference fact from 3.8% to 50.6%, a gate blocks fabricated-topic answers, and the claim checker's own accuracy (85.5%) is measured. | llama.cpp, BM25, fastembed, NLI |
-| [**E-Commerce Finance Mart**](https://github.com/VasilenData/ecommerce-finance-mart) ([live explorer](https://vasilendata.github.io/ecommerce-finance-mart/explorer/)) | 1.07M real invoice lines from a UK retailer normalized into a star schema, reconciled to the penny, with finance and customer marts, an Excel workbook of live formulas and a self-serve explorer and a [Tableau dashboard](https://public.tableau.com/app/profile/vasilen.kanchev/viz/E-CommerceFinanceMartSalesDashboard/E-CommerceFinanceMartsalesdashboard). Public practice data. | DuckDB, SQL, Excel, Python |
-| [**A/B Test Analysis**](https://github.com/VasilenData/ab-test-analysis) | A tested toolkit and analysis of a real 90,189-player experiment: sample-ratio check, z-test with confidence intervals, Holm correction, power and A/A validation, plus sequential testing and CUPED checked by simulation. Moving the gate cut day-7 retention by 0.82 points (p = 0.0016). Public dataset. | Python, SciPy, pytest |
-| [**Data Contracts Platform**](https://github.com/VasilenData/data-contracts-platform) | YAML data contracts with a DuckDB validator and a breaking-change detector. A contract fitted on one month of NYC taxi data failed the other 11 months on real schema and value drift. 195 tests. | Python, DuckDB, YAML |
-| [**BigQuery Cost Lab**](https://github.com/VasilenData/bigquery-cost-lab) | Measured BigQuery query costs on a public table and a sandbox (SELECT * with LIMIT would scan 2.38 TB; clustering cut a range scan 11.6x), plus a tested SQL linter and bytes estimator. Public data, no money spent. | Python, sqlglot, BigQuery |
-| [**HN Pulse**](https://github.com/VasilenData/hn-pulse) ([live](https://vasilendata.github.io/hn-pulse/)) | Hacker News API, then dbt models under enforced data contracts with 27 automated tests, then DuckDB and a dashboard. Orchestrated by an Airflow DAG and published on a schedule with GitHub Actions. | Python, dbt, DuckDB, Airflow, GitHub Actions |
-| [**Four-Engine Benchmark**](https://github.com/VasilenData/taxi-engines-benchmark) | The same four queries on DuckDB, Polars, pandas and Spark over 79 million NYC taxi trips, answers cross-checked. DuckDB 1.4 s against 32.8 s for pandas. | DuckDB, Polars, pandas, Spark |
-| [**Retrieval Evaluation for RAG**](https://github.com/VasilenData/rag-retrieval-eval) | BM25, Qdrant vectors, rank fusion and reranking measured on 2,000 labeled questions; recall@1 from 76% to 86% with reranking. Retrieval only. | Qdrant, BM25, fastembed |
-| [**Tech Job Market ETL**](https://github.com/VasilenData/tech-job-market-etl) | Python ingestion from public REST APIs. It validates and normalizes JSON payloads and loads them idempotently into PostgreSQL, scheduled daily with GitHub Actions cron and error logging. | Python, PostgreSQL, GitHub Actions |
-| [**E-Commerce Sales & Logistics Dashboard**](https://github.com/VasilenData/ecommerce-logistics-dashboard) ([live](https://vasilendata.github.io/ecommerce-logistics-dashboard/)) | SQL with CTEs, joins and window functions over 100,000+ orders. It maps revenue against delivery delays to find regional logistics bottlenecks. | SQL, PostgreSQL, Chart.js |
-| [**Customer Churn Model**](https://github.com/VasilenData/customer-churn-model) | Supervised Random Forest pipeline with feature engineering and EDA. ROC-AUC 0.84 and 78% recall on churners (76% accuracy, held-out test set). | Python, Pandas, Scikit-Learn |
+- **Connect the data to a decision.** Define the metrics, table grain and downstream use before choosing the implementation.
+- **Make failures visible.** Validate schemas and counts, retain rejected records where appropriate, and test reruns and failure paths.
+- **Explain the evidence.** Keep professional delivery, local experiments, CI checks and deployed demos clearly identified.
 
 ## Toolkit
 
-- **Languages and databases:** Python, SQL, PostgreSQL, Bash
-- **Data engineering:** dbt, Airflow, Kafka, Spark, DuckDB, Polars, Terraform, Docker, GitHub Actions, AWS, Pandas
-- **BI and analytics:** Tableau, Scikit-Learn, Git
+**Professional use:** Python, SQL, PostgreSQL, dbt, Docker, AWS RDS, ETL and API integration, data validation, Tableau and Excel.
+
+**Demonstrated in projects:** Dagster, Airflow (local), Kafka, Spark Structured Streaming, DuckDB, dimensional modeling, data contracts, GitHub Actions, BigQuery sandbox measurements and a Databricks Free Edition SQL port. Terraform configuration is validated in CI; it has not been deployed.
+
+## More work
+
+<details>
+<summary>All 14 projects, including analytics and ML</summary>
+
+| Project | Focus |
+|---|---|
+| [NYC Taxi Data Platform](https://github.com/VasilenData/nyc-taxi-data-platform) | Batch ingestion, dbt modeling, quarantine, reconciliation and rerun tests. |
+| [Wikipedia Streaming Lakehouse](https://github.com/VasilenData/wiki-stream-lakehouse) | Local Kafka/Spark streaming and explicit delivery/recovery limits. |
+| [HN Pulse](https://github.com/VasilenData/hn-pulse) · [live](https://vasilendata.github.io/hn-pulse/) | Scheduled API ingestion, model contracts, tests and a public dashboard. |
+| [Data Contracts Platform](https://github.com/VasilenData/data-contracts-platform) | YAML/DuckDB validation and breaking-change detection; documented drift from a January-fitted contract across later monthly files. |
+| [E-Commerce Finance Mart](https://github.com/VasilenData/ecommerce-finance-mart) · [explorer](https://vasilendata.github.io/ecommerce-finance-mart/explorer/) · [Tableau](https://public.tableau.com/app/profile/vasilen.kanchev/viz/E-CommerceFinanceMartSalesDashboard/E-CommerceFinanceMartsalesdashboard) | Star schema, financial reconciliation, an Excel workbook and a Databricks SQL port on public retail data. |
+| [BigQuery Cost Lab](https://github.com/VasilenData/bigquery-cost-lab) | Public-table dry-run estimates, sandbox scan measurements, SQL linting and a bytes estimator. |
+| [Tech Job Market ETL](https://github.com/VasilenData/tech-job-market-etl) | API ingestion, validation and idempotent PostgreSQL loads scheduled through GitHub Actions. |
+| [Four-Engine Benchmark](https://github.com/VasilenData/taxi-engines-benchmark) | Cross-checked queries over 79M taxi trips using DuckDB, Polars, pandas and Spark. |
+| [A/B Test Analysis](https://github.com/VasilenData/ab-test-analysis) | Experiment analysis, confidence intervals, multiple-testing correction and simulation checks. |
+| [E-Commerce Sales & Logistics Dashboard](https://github.com/VasilenData/ecommerce-logistics-dashboard) · [live](https://vasilendata.github.io/ecommerce-logistics-dashboard/) | PostgreSQL views and a dashboard connecting revenue, delivery delays and customer reviews. |
+| [Taxi Trip Duration Service](https://github.com/VasilenData/taxi-eta-service) | LightGBM, FastAPI, MLflow, champion/challenger promotion and drift monitoring. |
+| [Evaluated AI Research Assistant](https://github.com/VasilenData/research-assistant-eval) | A local language model, retrieval evaluation and a measured claim checker. |
+| [Retrieval Evaluation for RAG](https://github.com/VasilenData/rag-retrieval-eval) | BM25, Qdrant vectors, rank fusion and reranking evaluated on labeled questions. |
+| [Customer Churn Model](https://github.com/VasilenData/customer-churn-model) | Random Forest classification, feature engineering and held-out evaluation. |
+
+</details>
+
+## Background
+
+My current official role is **Data Engineer and Chief Revenue Officer at Gosian Media** (June 2025–present). My earlier work spans analytics, database administration and operations. That experience helps me understand which metrics matter and where automation improves day-to-day work.
+
+I am studying BSc (Hons) Computer Science at the University of Suffolk, expected 2027, and hold a Higher Certificate in Mathematics and Statistics with Distinction.
+
+For remote Data Engineer opportunities involving Python, SQL, dbt, data quality or pipeline ownership, [contact me on LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) or [email me](mailto:vasilen.business@gmail.com).
