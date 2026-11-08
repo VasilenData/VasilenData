@@ -13,7 +13,7 @@ I built and maintain Gosian Media's **agency-wide cash-flow reporting system**, 
 | Project | What to inspect | Operating scope |
 |---|---|---|
 | [**NYC Taxi Data Platform**](https://github.com/VasilenData/nyc-taxi-data-platform) | Dagster/dbt pipeline with a recorded **31.6M-trip** run, quarantine and reconciliation. Validated mart releases publish atomically; failure tests protect the previous release. | Local/Docker implementation and CI. Full-data measurements and sample-test scope are documented in the repository. |
-| [**Wikipedia Streaming Lakehouse**](https://github.com/VasilenData/wiki-stream-lakehouse) | Kafka/Spark streaming with raw-event replay, watermark-bounded deduplication and commit-aware reads. Real Kafka CI tests exercise forced-crash recovery and missing offsets. | Local execution and CI. AWS Terraform is validated, not deployed. |
+| [**E-Commerce Finance Mart**](https://github.com/VasilenData/ecommerce-finance-mart) | Star schema over **1.07M public invoice lines**, 14 blocking checks and a release build that compares **124 recalculated Excel values** with SQL. | DuckDB full-source release verified in CI. Historical Databricks port comparison is documented separately. |
 | [**HN Pulse**](https://github.com/VasilenData/hn-pulse) · [live dashboard](https://vasilendata.github.io/hn-pulse/) | Python/dbt/DuckDB pipeline with **27 dbt data tests**, enforced model contracts, bounded API retries and a separate hourly check of published-data freshness. | GitHub Actions runs the live schedule. A separate Airflow DAG demonstrates local orchestration. |
 
 ## Start with the evidence
