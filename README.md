@@ -2,27 +2,30 @@
 
 **Data Engineer | Python, SQL, dbt, PostgreSQL and AWS RDS**
 
-Porto, Portugal · EU citizen · Open to full-time remote Data Engineer and SQL/dbt Analytics Engineer roles.
+Porto, Portugal · EU citizen · Open to full-time remote Data Engineer and SQL/dbt Analytics Engineer roles with teams that can hire in Portugal.
 
-I built and maintain Gosian Media's **agency-wide cash-flow reporting system**, live since **October 2026** with **daily refreshes**. I migrated **30+ spreadsheets into PostgreSQL on AWS RDS** and built Python, Docker and dbt workflows, saving an estimated **10+ hours of manual data entry each week**. Previously, I automated Python/Tableau KPI reporting for **15+ stakeholders** and built ETL workflows from social media APIs.
+I build pipelines and reporting systems for business decisions. At Gosian Media, I was promoted from **Data Engineer to Chief Revenue Officer in June 2026**, while continuing hands-on data engineering. I am now targeting a dedicated engineering role focused on pipeline ownership, data quality and business reporting.
 
-[Portfolio](https://vasilendata.github.io) · [CV (PDF)](https://vasilendata.github.io/vasilen-kanchev-cv.pdf) · [LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) · [Email](mailto:vasilen.business@gmail.com)
+I built and maintain Gosian's **agency-wide cash-flow reporting system**, live since **October 2026** with **daily refreshes**. I consolidated **30+ spreadsheets into PostgreSQL on AWS RDS** using Python, Docker and dbt, saving an estimated **10+ hours of manual data entry each week**. Previously, I automated Python/Tableau KPI reporting for **15+ stakeholders** and built ETL workflows from social media APIs.
+
+[Portfolio](https://vasilendata.github.io) · [Data Engineer CV](https://vasilendata.github.io/vasilen-kanchev-cv.pdf) · [Analytics Engineer CV](https://vasilendata.github.io/vasilen-kanchev-cv-analytics.pdf) · [LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) · [Email](mailto:vasilen.business@gmail.com)
 
 ## Selected engineering projects
 
 | Project | What to inspect | Operating scope |
 |---|---|---|
-| [**NYC Taxi Data Platform**](https://github.com/VasilenData/nyc-taxi-data-platform) | Dagster/dbt pipeline with a recorded **31.6M-trip** run, quarantine and reconciliation. Validated mart releases publish atomically; failure tests protect the previous release. | Local/Docker implementation and CI. Full-data measurements and sample-test scope are documented in the repository. |
-| [**E-Commerce Finance Mart**](https://github.com/VasilenData/ecommerce-finance-mart) | Star schema over **1.07M public invoice lines**, 14 blocking checks and a release build that compares **124 recalculated Excel values** with SQL. | DuckDB full-source release verified in CI. Historical Databricks port comparison is documented separately. |
-| [**HN Pulse**](https://github.com/VasilenData/hn-pulse) · [live dashboard](https://vasilendata.github.io/hn-pulse/) | Python/dbt/DuckDB pipeline with **27 dbt data tests**, enforced model contracts, bounded API retries and a separate hourly check of published-data freshness. | GitHub Actions runs the live schedule. A separate Airflow DAG demonstrates local orchestration. |
+| [**NYC Taxi Data Platform**](https://github.com/VasilenData/nyc-taxi-data-platform) | Dagster/dbt ingestion, quarantine and reconciliation. Atomic publication and failure tests preserve the previous validated mart release. | Local/Docker and CI. A recorded **31.6M-trip benchmark predates the publication changes**; full-data measurements and sample tests are documented separately. |
+| [**E-Commerce Finance Mart**](https://github.com/VasilenData/ecommerce-finance-mart) | Star schema over **1.07M public invoice lines**. Blocking reconciliation checks and a release build compare recalculated Excel values with SQL before publishing the workbook, explorer and charts together. | DuckDB full-source release verified in CI. The historical Databricks comparison is documented separately. |
+| [**HN Pulse**](https://github.com/VasilenData/hn-pulse) · [live dashboard](https://vasilendata.github.io/hn-pulse/) | Python/dbt/DuckDB pipeline with model contracts and tests that gate publication, bounded API retries and a separate hourly freshness check. | GitHub Actions runs the live schedule. A separate Airflow DAG demonstrates local orchestration. |
+
+For streaming roles, inspect the [Wikipedia Streaming Lakehouse](https://github.com/VasilenData/wiki-stream-lakehouse): a local Kafka/Spark implementation with raw-event replay and real Kafka CI recovery tests.
 
 ## Start with the evidence
 
-- **Professional delivery:** [the spreadsheet-to-RDS case study](https://vasilendata.github.io/gosian/) explains the operational problem, my implementation and the difference between automation results and wider business outcomes.
-- **Repeatability and recovery:** [NYC Taxi publication tests](https://github.com/VasilenData/nyc-taxi-data-platform/blob/main/tests/test_publication.py) exercise failed validation, interrupted publication and preservation of the previous release. The [dated full-data measurement](https://github.com/VasilenData/nyc-taxi-data-platform/blob/main/measurements/full-2026-11-08.json) records the benchmark conditions; sample CI runs are a separate check.
-- **Scheduled delivery:** the [dated HN Pulse operations review](https://github.com/VasilenData/hn-pulse/blob/main/docs/operations-review-2026-11-08.md) records actual run outcomes, two historical failures and a separately labeled recovery exercise. The [live dashboard](https://vasilendata.github.io/hn-pulse/) exposes data age and quality status; a [separate monitor workflow](https://github.com/VasilenData/hn-pulse/actions/workflows/monitor.yml) retains dated freshness observations.
-
-For **Analytics Engineer** roles, start with the [finance mart and reconciliation checks](https://github.com/VasilenData/ecommerce-finance-mart) and my [Analytics Engineer CV](https://vasilendata.github.io/vasilen-kanchev-cv-analytics.pdf).
+- **Professional ownership:** [the Gosian case study](https://vasilendata.github.io/gosian/) explains the spreadsheet-to-RDS implementation, daily reporting and the difference between estimated automation savings and wider operational outcomes. Employer code and data are private.
+- **Safe publication:** [NYC Taxi publication tests](https://github.com/VasilenData/nyc-taxi-data-platform/blob/main/tests/test_publication.py) exercise failed validation, interrupted publication and preservation of the previous release. The [dated full-data measurement](https://github.com/VasilenData/nyc-taxi-data-platform/blob/main/measurements/full-2026-11-08.json) records the earlier benchmark conditions.
+- **Actual run history:** the [dated HN Pulse operations review](https://github.com/VasilenData/hn-pulse/blob/main/docs/operations-review-2026-11-08.md) records observed outcomes, two historical failures and a separately labeled recovery exercise. The [dashboard](https://vasilendata.github.io/hn-pulse/) exposes data age and quality status; a [separate monitor workflow](https://github.com/VasilenData/hn-pulse/actions/workflows/monitor.yml) retains dated freshness observations.
+- **Business definitions and reconciliation:** inspect the [Finance Mart models and release checks](https://github.com/VasilenData/ecommerce-finance-mart), [interactive explorer](https://vasilendata.github.io/ecommerce-finance-mart/explorer/) and [Tableau dashboard](https://public.tableau.com/app/profile/vasilen.kanchev/viz/E-CommerceFinanceMartSalesDashboard/E-CommerceFinanceMartsalesdashboard).
 
 ## Toolkit
 
@@ -30,18 +33,25 @@ For **Analytics Engineer** roles, start with the [finance mart and reconciliatio
 
 **Demonstrated in projects:** Dagster, Airflow (local), Kafka, Spark Structured Streaming, DuckDB, dimensional modeling, data contracts, GitHub Actions, BigQuery sandbox measurements and a Databricks Free Edition SQL port. Terraform configuration is validated in CI; it has not been deployed.
 
+## Career progression
+
+| Company | Earlier role | Later role |
+|---|---|---|
+| Gosian Media LLC | Data Engineer · Jun 2025–May 2026 | Chief Revenue Officer · Jun 2026–Present; continuing hands-on data engineering |
+| Influencer Marketing Hub | Data Analyst · Nov 2023–Apr 2024 | Senior Supervisor · May 2024–Jun 2025 |
+| Tapin Platforms | Data Administrator · Oct 2021–Sep 2022 | Operations Analyst · Oct 2022–Nov 2023 |
+
+My earlier work includes operations and data administration. That experience helps me connect technical work with the people and decisions it supports. I am studying BSc (Hons) Computer Science at the University of Suffolk, expected 2027, and hold a Higher Certificate in Mathematics and Statistics with Distinction.
+
 ## More work
 
 <details>
-<summary>All 14 projects, including analytics and ML</summary>
+<summary>Additional projects in data engineering, analytics and ML</summary>
 
 | Project | Focus |
 |---|---|
-| [NYC Taxi Data Platform](https://github.com/VasilenData/nyc-taxi-data-platform) | Batch ingestion, quarantine, reconciliation and atomic publication of validated marts. |
 | [Wikipedia Streaming Lakehouse](https://github.com/VasilenData/wiki-stream-lakehouse) | Local Kafka/Spark streaming, replay from retained raw events and real Kafka CI tests for forced-crash recovery. |
-| [HN Pulse](https://github.com/VasilenData/hn-pulse) · [live](https://vasilendata.github.io/hn-pulse/) | Scheduled API ingestion, publication gates, bounded retries and published-data freshness checks. |
-| [Data Contracts Platform](https://github.com/VasilenData/data-contracts-platform) | YAML/DuckDB validation, breaking-change detection and regression tests that prevent duplicate rule names from downgrading blocking failures. |
-| [E-Commerce Finance Mart](https://github.com/VasilenData/ecommerce-finance-mart) · [explorer](https://vasilendata.github.io/ecommerce-finance-mart/explorer/) · [Tableau](https://public.tableau.com/app/profile/vasilen.kanchev/viz/E-CommerceFinanceMartSalesDashboard/E-CommerceFinanceMartsalesdashboard) | Star schema and reconciliation on public retail data; release bundles validate recalculated Excel values against SQL and record source/artifact checksums. |
+| [Data Contracts Platform](https://github.com/VasilenData/data-contracts-platform) | YAML/DuckDB validation, breaking-change detection and regression tests preventing duplicate rule names from downgrading blocking failures. |
 | [BigQuery Cost Lab](https://github.com/VasilenData/bigquery-cost-lab) | Public-table dry-run estimates, sandbox scan measurements, SQL linting and exact integer billing ceilings. |
 | [Tech Job Market ETL](https://github.com/VasilenData/tech-job-market-etl) | Idempotent PostgreSQL loads, per-source diagnostics and a completeness gate that withholds reports after source failures. |
 | [Four-Engine Benchmark](https://github.com/VasilenData/taxi-engines-benchmark) | Recorded queries over 79M taxi trips; cross-engine answer checks, validated worker measurements and atomic result checkpoints. |
@@ -54,10 +64,4 @@ For **Analytics Engineer** roles, start with the [finance mart and reconciliatio
 
 </details>
 
-## Background
-
-My current official role is **Data Engineer and Chief Revenue Officer at Gosian Media** (June 2025–present). My earlier work spans analytics, database administration and operations. That experience helps me understand which metrics matter and where automation improves day-to-day work.
-
-I am studying BSc (Hons) Computer Science at the University of Suffolk, expected 2027, and hold a Higher Certificate in Mathematics and Statistics with Distinction.
-
-For remote Data Engineer or SQL/dbt Analytics Engineer opportunities involving data quality, financial reporting or pipeline ownership, [contact me on LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) or [email me](mailto:vasilen.business@gmail.com).
+For remote roles involving data quality, financial reporting or pipeline ownership, [contact me on LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) or [email me](mailto:vasilen.business@gmail.com).
