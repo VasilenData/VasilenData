@@ -20,6 +20,25 @@ I built and maintain Gosian's **agency-wide cash-flow reporting system**, live s
 
 For streaming roles, inspect the [Wikipedia Streaming Lakehouse](https://github.com/VasilenData/wiki-stream-lakehouse): a local Kafka/Spark implementation with raw-event replay and real Kafka CI recovery tests.
 
+## Seven capabilities, with evidence
+
+The [evidence hub](https://vasilendata.github.io/labs/) connects the implementation, measured result and limits for each direction. These extend the existing projects; the CVs remain focused on three role-relevant examples.
+
+<details>
+<summary>Experimentation, customer value, forecasting, finance, serving, search and evaluation</summary>
+
+| Capability | Evidence and scope |
+|---|---|
+| Product experimentation | [Decision report](https://vasilendata.github.io/labs/experimentation/): 90,189 assigned players; retrospective primary/guardrail protocol, explicit missing exposure/timestamp evidence. |
+| Customer retention and future value | [Temporal retail study](https://vasilendata.github.io/labs/customer-value/) and [nested churn evaluation](https://vasilendata.github.io/labs/churn/); no measured retention uplift or lifetime-profit claim. |
+| Demand and capacity planning | [Forecast replay](https://vasilendata.github.io/labs/forecast/): 11.3% lower MAE against the weekly baseline; capacity units are hypothetical. |
+| Financial decision support | [Management brief](https://vasilendata.github.io/labs/management/): reconciled historical revenue drivers, proposed actions and information still needed before acting. |
+| Prediction service operations | [Booking evaluation](https://vasilendata.github.io/labs/service/): 4.068-minute MAE versus 5.574 baseline on 200,000 future-period sampled trips; booking-only features. Public deployment is a separate verification. |
+| Domain search and RAG | [Document lifecycle](https://vasilendata.github.io/labs/search/): four local formats, stable identities, incremental search and transactional deletion; small source-informed smoke demonstration. |
+| AI regression evaluation | [Release gate](https://vasilendata.github.io/labs/evaluation/): 160 paired retrieval tasks and a rejected regression; full-generation publication tests do not constitute a new LLM benchmark. |
+
+</details>
+
 ## Start with the evidence
 
 - **Professional ownership:** [the Gosian case study](https://vasilendata.github.io/gosian/) explains the spreadsheet-to-RDS implementation, daily reporting and the difference between estimated automation savings and wider operational outcomes. Employer code and data are private.
@@ -56,12 +75,12 @@ My earlier work includes operations and data administration. That experience hel
 | [BigQuery Cost Lab](https://github.com/VasilenData/bigquery-cost-lab) | Public-table dry-run estimates, sandbox scan measurements, SQL linting and exact integer billing ceilings. |
 | [Tech Job Market ETL](https://github.com/VasilenData/tech-job-market-etl) | Idempotent PostgreSQL loads, per-source diagnostics and a completeness gate that withholds reports after source failures. |
 | [Four-Engine Benchmark](https://github.com/VasilenData/taxi-engines-benchmark) | Recorded queries over 79M taxi trips; cross-engine answer checks, validated worker measurements and atomic result checkpoints. |
-| [A/B Test Analysis](https://github.com/VasilenData/ab-test-analysis) | Experiment analysis, multiple-testing correction, inference-domain validation and seeded statistical invariant checks. |
+| [A/B Test Analysis](https://github.com/VasilenData/ab-test-analysis) | Assignment/exposure contracts, analysis cutoffs and immutable decision reports; retrospective Cookie Cats protocol, with missing timestamps and exposure events disclosed. |
 | [E-Commerce Sales & Logistics Dashboard](https://github.com/VasilenData/ecommerce-logistics-dashboard) · [live](https://vasilendata.github.io/ecommerce-logistics-dashboard/) | PostgreSQL views linking revenue, delivery and reviews; identifier-preserving imports and explicit missing-estimate handling. |
-| [Taxi Trip Duration Service](https://github.com/VasilenData/taxi-eta-service) | LightGBM/FastAPI service with chronological evaluation, drift checks and atomic publication of model/metadata bundles. |
+| [Taxi Trip Duration Service](https://github.com/VasilenData/taxi-eta-service) | Booking-only LightGBM/FastAPI model with separate train/selection/calibration/test months; June sampled MAE 4.068 minutes versus 5.574 baseline, plus versioned delivery and drift checks. |
 | [Evaluated AI Research Assistant](https://github.com/VasilenData/research-assistant-eval) · [release gate report](https://vasilendata.github.io/labs/evaluation/) | Fingerprinted baseline/candidate evaluation with paired quality, p95 latency, API-cost and error gates. The measured 160-query retrieval comparison is separate from historical language-model answer evaluation. |
-| [Retrieval Evaluation for RAG](https://github.com/VasilenData/rag-retrieval-eval) | Recorded retrieval comparisons plus reusable question-level evidence and paired article-cluster bootstrap comparisons for new runs. |
-| [Customer Churn Model](https://github.com/VasilenData/customer-churn-model) | Held-out model evaluation, calibration and training-only threshold optimization checked against an exhaustive oracle. |
+| [Retrieval Evaluation for RAG](https://github.com/VasilenData/rag-retrieval-eval) | Bounded four-format ingestion, stable document identities, transactional incremental SQLite search and deletion; historical retrieval results remain separate. |
+| [Customer Churn Model](https://github.com/VasilenData/customer-churn-model) | Cross-fit selection/calibration with customer identities; bounded logistic rerun AUC 0.8446 and Brier 0.1363 on the previously inspected split, plus a tested illustrative threshold policy. |
 
 </details>
 
