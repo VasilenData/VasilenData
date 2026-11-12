@@ -1,6 +1,6 @@
 # Vasilen Kanchev
 
-**Data Engineer | Python, SQL, dbt, PostgreSQL and AWS RDS**
+**Data Engineer | Financial data pipelines & reporting | Python, SQL, dbt**
 
 Porto, Portugal · EU citizen · Open to full-time remote Data Engineer and SQL/dbt Analytics Engineer roles with teams that can hire in Portugal.
 
@@ -46,7 +46,7 @@ I was promoted from **Data Engineer to Chief Revenue Officer in June 2026** at G
 
 **Professional use:** Python, SQL, PostgreSQL, dbt, Docker, AWS RDS, ETL and API integration, data validation, Tableau and Excel.
 
-**Demonstrated in projects:** Dagster, Airflow (local), Kafka, Spark Structured Streaming, DuckDB, dimensional modeling, data contracts, GitHub Actions, scikit-learn, temporal backtesting and regression evaluation gates. BigQuery measurements use a sandbox; the Databricks Free Edition work is a SQL port. Terraform configuration is validated in CI and has not been deployed.
+**Demonstrated in projects:** Dagster, Airflow (local), Kafka, Spark Structured Streaming, DuckDB, dimensional modeling, data contracts, Git, pytest, GitHub Actions (CI/CD), scikit-learn, temporal backtesting and regression evaluation gates. BigQuery measurements use a sandbox; the Databricks Free Edition work is a SQL port. Terraform configuration is validated in CI and has not been deployed.
 
 ## Career progression
 
