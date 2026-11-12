@@ -18,7 +18,7 @@ I was promoted from **Data Engineer to Chief Revenue Officer in June 2026** at G
 
 **Built:** A DuckDB SQL star schema and finance marts over **1.07M historical public invoice lines**, with explicit metric definitions and row/amount reconciliation. SQL, Excel and the interactive explorer are checked together in one release.
 
-**Result:** The 11 November 2026 release passed **14 blocking checks** and **124 recalculated workbook-to-SQL comparisons**, with **zero formula errors**. This is a public-data project; no employer ROI is claimed.
+**Result:** The 11 November 2026 release passed **14 blocking checks** and **124 recalculated workbook-to-SQL comparisons**, with **zero formula errors**. A separate [synthetic PostgreSQL/Debezium lab](https://github.com/VasilenData/ecommerce-finance-mart/blob/main/docs/operational-cdc-20261112/README.md) passed **six hosted integration checks** for changing orders, crash recovery and replay. Historical public data and generated operational events are distinct; no employer ROI is claimed.
 
 [View the result](https://vasilendata.github.io/ecommerce-finance-mart/explorer/) · [Inspect the engineering](https://github.com/VasilenData/ecommerce-finance-mart)
 
@@ -26,9 +26,9 @@ I was promoted from **Data Engineer to Chief Revenue Officer in June 2026** at G
 
 **Problem:** Invalid trip records and failed rebuilds can leave analytics incomplete or inconsistent.
 
-**Built:** Dagster/dbt ingestion, explicit quarantine reasons and staged publication in DuckDB. Failure tests exercise rejected candidates and interrupted publication while preserving the previous valid consumer release.
+**Built:** Dagster/dbt ingestion, explicit quarantine reasons and staged publication of eight consumer tables in DuckDB. Reviewed change plans bind corrections and model changes to their source bytes and current publication; failed candidates preserve the last valid consumer release.
 
-**Result:** A dated benchmark reconciled **31.6M trips** across valid and quarantined records. That measurement predates staged publication; the current failure tests are separate evidence. Runs locally, in Docker and in CI.
+**Result:** A **12 November 2026 full-data run** reconciled **31.6M historical trips** through the current publisher. A separate 30,000-row exercise verified selective source correction, schema rejection, failed-candidate recovery and model-only reclassification. This is measured local Windows execution, not a live cloud warehouse. An optional five-row [Iceberg comparison](https://github.com/VasilenData/nyc-taxi-data-platform/blob/main/docs/ICEBERG.md) demonstrates single-table snapshots and rollback separately.
 
 [View the result](https://vasilendata.github.io/projects/nyc-taxi/) · [Inspect the engineering](https://github.com/VasilenData/nyc-taxi-data-platform#evidence-to-inspect)
 
@@ -36,9 +36,9 @@ I was promoted from **Data Engineer to Chief Revenue Officer in June 2026** at G
 
 **Problem:** A live dashboard needs complete, validated data and a visible signal when publication falls behind.
 
-**Built:** A Python/dbt/DuckDB pipeline with model contracts, publication gates, bounded API retries and an independent freshness monitor.
+**Built:** A Python/dbt/DuckDB pipeline with model contracts, publication gates and bounded API retries. An independently scheduled Railway monitor validates the public export and stores incident transitions with a durable notification outbox.
 
-**Result:** A public dashboard exposes data age and quality status. GitHub Actions publication and hourly monitoring are configured; recorded operations include failures and scheduling gaps. The Airflow DAG demonstrates separate local orchestration.
+**Result:** On 12 November 2026, the independent monitor detected an overdue export. A controlled drill verified one alert and one recovery email in the recipient inbox; a later live check reopened persistent state and drained the queued incident after publication recovered. The [dated operating review](https://github.com/VasilenData/hn-pulse/blob/main/docs/operations-review-2026-11-12.md) separates actual observations from controlled faults. The dashboard uses GitHub Actions and Pages, with bounded Railway trial monitoring; no uptime SLA is claimed.
 
 [View the result](https://vasilendata.github.io/hn-pulse/) · [Inspect the engineering](https://github.com/VasilenData/hn-pulse)
 
