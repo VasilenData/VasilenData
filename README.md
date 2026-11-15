@@ -25,6 +25,8 @@ SQL/Excel reporting over **1.07M public invoice lines**, with **124 passing comp
 
 [Run one focused proof per project](https://vasilendata.github.io/proof/) · [Professional case study](https://vasilendata.github.io/gosian/)
 
+**New public-data study:** [NoticeBridge](https://github.com/VasilenData/noticebridge-data-platform) traces real TED procurement corrections through immutable notice history and a [read-only change explorer](https://vasilendata.github.io/noticebridge-data-platform/?notice=789562-2026#explorer). Dated public-data capture with tested interruption and recovery; operating history is still being established.
+
 **Professional tools:** Python, SQL, dbt, PostgreSQL, AWS RDS, Docker, Tableau and Excel.
 
 Project implementation and review are AI-assisted. Local/synthetic exercises and read-only demos are labelled; they do not imply production adoption or independent review.
