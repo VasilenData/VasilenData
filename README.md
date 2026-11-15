@@ -1,45 +1,30 @@
 # Vasilen Kanchev
 
-**Data Engineer | Python, SQL & dbt | Financial reporting and reliable pipelines**
+**Data Engineer | Python, SQL, dbt & PostgreSQL | Revenue & Billing Data Systems**
 
-I build data systems that make reporting consistent and changes explainable. At Gosian Media, I built and maintain agency-wide cash-flow reporting, refreshed daily since October 2026. I progressed from Data Engineer to **Chief Revenue Officer** in June 2026 and continued hands-on engineering. I am now seeking a dedicated Data Engineer or Analytics Engineer role.
+I build data systems that make changed numbers explainable and failed updates recoverable. At Gosian, I own daily cash-flow reporting; I progressed from Data Engineer to Chief Revenue Officer and continued hands-on engineering. I am seeking a dedicated Data Engineer or Analytics Engineer role.
 
-**Porto, Portugal · EU citizen · Open to full-time remote roles with teams that can hire in Portugal.**
+**Porto, Portugal · EU citizen · Full-time remote roles with teams that hire in Portugal.**
 
-[Portfolio](https://vasilendata.github.io/) · [Data Engineer CV](https://vasilendata.github.io/vasilen-kanchev-cv.pdf) · [Analytics Engineer CV](https://vasilendata.github.io/vasilen-kanchev-cv-analytics.pdf) · [LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) · [Email](mailto:vasilen.business@gmail.com)
+[Portfolio](https://vasilendata.github.io/) · [DE CV](https://vasilendata.github.io/vasilen-kanchev-cv.pdf) · [AE CV](https://vasilendata.github.io/vasilen-kanchev-cv-analytics.pdf) · [LinkedIn](https://www.linkedin.com/in/vasilenkanchev/) · [Email](mailto:vasilen.business@gmail.com)
 
-## Three projects to inspect
-
-### Meterwork — explain a changed usage statement
-
-Built Python/FastAPI/PostgreSQL usage processing that handles retries, late events and historical prices. **72 statement revisions across 24 synthetic accounts** reconciled to independent calculations. Separate HTTP tests verify restricted database credentials and account-specific request limits.
+### Meterwork · explain a changed charge
+Python/PostgreSQL usage ledger with historical pricing and retry-safe events. **72 revisions across 24 synthetic accounts** reconciled to independent SQL. A local two-worker exercise tests shared quotas and a retry after an observed commit and worker kill.
 
 [View the result](https://vasilendata.github.io/usage-metering-platform/#reconciliation) · [Inspect the engineering](https://github.com/VasilenData/usage-metering-platform)
 
-*Synthetic local/CI exercises; public demo is read-only.*
-
-### NYC Taxi — keep valid reporting available after a failed refresh
-
-Built a Dagster/dbt/DuckDB pipeline that validates a candidate before publishing eight tables together. A local run reconciled **31.6M historical trips**; separate failure and correction tests verify that rejected changes preserve the previous valid release.
+### NYC Taxi · preserve valid reporting after failure
+Dagster/dbt pipeline: **31.6M historical trips** reconciled locally; eight tables publish together. A separate **30K-row** exercise records a rejected candidate, preserved output and recovery. AWS remains undeployed.
 
 [View the result](https://vasilendata.github.io/projects/nyc-taxi/) · [Inspect the engineering](https://github.com/VasilenData/nyc-taxi-data-platform)
 
-*Historical public data; AWS configuration remains undeployed.*
-
-### Finance Mart — reconcile reports and explain corrections
-
-Built SQL reporting over **1.07M public invoice lines**, with **124 Excel-to-SQL comparisons**. A separate dbt subscription exercise preserves original closes and verifies that late corrections and backfills match full rebuilds on DuckDB and PostgreSQL.
+### Finance Mart · reproduce a financial close
+SQL/Excel reporting over **1.07M public invoice lines**, with **124 passing comparisons**. Separate synthetic dbt models test corrections, versioned metrics, frozen releases and rollback on DuckDB and PostgreSQL.
 
 [View the result](https://vasilendata.github.io/ecommerce-finance-mart/explorer/) · [Inspect the engineering](https://github.com/VasilenData/ecommerce-finance-mart)
 
-*Historical retail data; subscription records are synthetic.*
+[Run one focused proof per project](https://vasilendata.github.io/proof/) · [Professional case study](https://vasilendata.github.io/gosian/)
 
-## Toolkit
+**Professional tools:** Python, SQL, dbt, PostgreSQL, AWS RDS, Docker, Tableau and Excel.
 
-**Professional:** Python, SQL, dbt, PostgreSQL, Docker, AWS RDS, Tableau and Excel.
-
-**Portfolio:** Dagster, DuckDB, FastAPI, GitHub Actions, pytest and data contracts.
-
-[Professional case study](https://vasilendata.github.io/gosian/) · [Additional experiments](https://vasilendata.github.io/labs/)
-
-Project implementation and review are AI-assisted; each repository documents reproducible evidence and its limits.
+Project implementation and review are AI-assisted. Local/synthetic exercises and read-only demos are labelled; they do not imply production adoption or independent review.
