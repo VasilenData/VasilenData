@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title"><title id="title">Vasilen Kanchev — Data systems with proof</title><rect width="100%" height="100%" fill="#111315"/>
+<rect x="0" y="0" width="8" height="360" rx="0" fill="#7EE0B8"/>
+<text x="54" y="52.22" fill="#AAB7B1" font-family="Consolas,monospace" font-size="18" font-weight="400" text-anchor="start">VASILEN KANCHEV / DATA ENGINEER</text>
+<text x="54" y="138.82" fill="#F0F3F2" font-family="Segoe UI,Arial,sans-serif" font-size="58" font-weight="700" text-anchor="start">Data systems,</text>
+<text x="54" y="203.82" fill="#7EE0B8" font-family="Segoe UI,Arial,sans-serif" font-size="58" font-weight="700" text-anchor="start">with proof.</text>
+<text x="54" y="294.59" fill="#AAB7B1" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" text-anchor="start">Python · SQL · dbt · PostgreSQL</text>
+<polyline points="675,51 675,308" fill="none" stroke="#34413B" stroke-width="1"/>
+<text x="714" y="72.22" fill="#7EE0B8" font-family="Consolas,monospace" font-size="18" font-weight="400" text-anchor="start">01</text>
+<text x="764" y="73.8" fill="#F0F3F2" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" text-anchor="start">METERWORK</text>
+<text x="764" y="104.8" fill="#AAB7B1" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" text-anchor="start">Explain a changed charge.</text>
+<text x="714" y="161.22" fill="#7EE0B8" font-family="Consolas,monospace" font-size="18" font-weight="400" text-anchor="start">02</text>
+<text x="764" y="162.8" fill="#F0F3F2" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" text-anchor="start">NYC TAXI</text>
+<text x="764" y="193.8" fill="#AAB7B1" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" text-anchor="start">Preserve a valid release.</text>
+<text x="714" y="250.22" fill="#7EE0B8" font-family="Consolas,monospace" font-size="18" font-weight="400" text-anchor="start">03</text>
+<text x="764" y="251.8" fill="#F0F3F2" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" text-anchor="start">FINANCE MART</text>
+<text x="764" y="282.8" fill="#AAB7B1" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" text-anchor="start">Reproduce a financial close.</text>
+</svg>
